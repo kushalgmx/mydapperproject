@@ -1,0 +1,2 @@
+2021-08-14 09:10:15.484 -04:00 [INF] Connection String DataSource:app.db;Cache=Shared
+2021-08-14 09:29:21.035 -04:00 [INF] TODO: Write code to connect to Connection String DataSource:app.db;Cache=Shared
