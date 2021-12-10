@@ -17,4 +17,8 @@
 		</Content>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\FileTransfer.Persistence\FileTransfer.Persistence.csproj" />
+	</ItemGroup>
+
 </Project>

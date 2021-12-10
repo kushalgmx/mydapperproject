@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FileTransfer.Console\FileTransfer.Console.csproj" />
+    <ProjectReference Include="..\FileTransfer.Persistence\FileTransfer.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

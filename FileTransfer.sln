@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31606.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransfer.Console", "FileTransfer.Console\FileTransfer.Console.csproj", "{88494CDA-DF97-41D2-9D9B-0A45DF41B4E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4300D569-1918-439B-9766-BB31B8A80F24} = {4300D569-1918-439B-9766-BB31B8A80F24}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{BC856881-5BE1-427A-9C7D-C2DC4564C44D}"
 EndProject
@@ -18,6 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransfer.Xunit", "FileTransfer.Xunit\FileTransfer.Xunit.csproj", "{DA6E5DC0-CA05-429B-8555-373A2E29807E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4300D569-1918-439B-9766-BB31B8A80F24} = {4300D569-1918-439B-9766-BB31B8A80F24}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransfer.Persistence", "FileTransfer.Persistence\FileTransfer.Persistence.csproj", "{4300D569-1918-439B-9766-BB31B8A80F24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,10 @@ Global
 		{DA6E5DC0-CA05-429B-8555-373A2E29807E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA6E5DC0-CA05-429B-8555-373A2E29807E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA6E5DC0-CA05-429B-8555-373A2E29807E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4300D569-1918-439B-9766-BB31B8A80F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4300D569-1918-439B-9766-BB31B8A80F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4300D569-1918-439B-9766-BB31B8A80F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4300D569-1918-439B-9766-BB31B8A80F24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

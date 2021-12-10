@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using FileTransfer.Persistence;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -18,7 +19,7 @@ namespace FileTransfer.Console
 
         static void ConfigSetup(IConfigurationBuilder builder)
         {
-            builder.SetBasePath(Directory.GetCurrentDirectory())
+            builder.SetBasePath(System.IO.Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                     .AddEnvironmentVariables();
         }
@@ -32,11 +33,11 @@ namespace FileTransfer.Console
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(builder.Build())
                 .Enrich.FromLogContext()
-                //.WriteTo.Console()
+                .WriteTo.Console()
                 .WriteTo.File(@"C:\Users\khada\source\personal\FileTransfer\FileTransfer.Console\log.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 
-            // Initiated the depevndency injection container 
+            // Initiated the dependency injection container 
             var host = Host.CreateDefaultBuilder()
                         .ConfigureServices((context, services) =>
                         {
