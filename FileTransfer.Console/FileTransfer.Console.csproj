@@ -4,9 +4,11 @@
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net6.0</TargetFramework>
 		<Nullable>enable</Nullable>
+		<UserSecretsId>fd3cd375-1bad-410b-901f-148265890c3f</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
 		<PackageReference Include="Serilog.Extensions.Hosting" Version="4.1.2" />
 		<PackageReference Include="Serilog.Settings.Configuration" Version="3.2.0" />
